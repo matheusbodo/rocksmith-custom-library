@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="row">
+	<div class="col-md-4">
+		<%= image_tag( @artist.image_url, style: "max-width:200px;max-height:200px", class: "img-thumbnail") %>
+	</div>
+	<div class="col-md-8">
+		<p class="text-center">
+  			<h1><%= @artist.name %></h1>
+  		</p>
+	</div>
+</div>
+
+<%= link_to 'Edit', edit_artist_path(@artist) %> |
+<%= link_to 'Back', artists_path %>
